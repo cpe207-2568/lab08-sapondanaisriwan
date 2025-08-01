@@ -13,7 +13,7 @@ export default function Task(props: TaskCardProps) {
           </div>
 
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <button className="btn btn-success me-2">Done</button>
+            <button className="btn btn-success me-2">{props.isDone}</button>
           </div>
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-2">
             <button className="btn btn-danger">Delete</button>

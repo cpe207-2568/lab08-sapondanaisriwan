@@ -1,9 +1,9 @@
-import type { FooterProps } from "../libs/types";
+import {type FooterProps } from "../libs/types";
 
-export default function Footer({ year, fullName, studentId }: FooterProps) {
+export default function Footer(props: FooterProps) {
   return (
     <footer className="text-secondary text-center p-2 bg-light mt-auto">
-      Copyright © {year} {fullName} {studentId}
+      Copyright © {props.year} {props.fullName} {props.studentId}
     </footer>
   );
 }

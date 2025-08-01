@@ -1,6 +1,6 @@
-import type { SidebarProps } from "../libs/types";
+import {type SidebarProps } from "../libs/types";
 
-export default function Sidebar({ userName, type }: SidebarProps) {
+export default function Sidebar(props: SidebarProps) {
   return (
     <aside
       className="d-flex flex-column p-3"
@@ -27,7 +27,7 @@ export default function Sidebar({ userName, type }: SidebarProps) {
       {/* แสดงชื่อผู้ใช้ด้านล่าง */}
       <div className="fw-bold text-muted">
         <p>
-          {userName} : {type}
+          {props.userName} : {props.type}
         </p>
       </div>
     </aside>
